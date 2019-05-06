@@ -1,1 +1,10 @@
-language: python
+jobs:
+  include:
+    - stage: clean
+      script: echo "cleaning"
+    - stage: build
+      script: echo "building"
+    - stage: test
+      script: echo "testing"
+    - stage: deploy
+      script: echo "deploying"
