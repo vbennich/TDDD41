@@ -1,5 +1,1 @@
-added a line
-asds
-
-sads
-aa
+This is a sample project that will be used to test building in  Travis CI, GitLab CI and Jenkins.
