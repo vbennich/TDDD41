@@ -1,0 +1,22 @@
+{
+  "name": "tdde41",
+  "version": "1.0.0",
+  "description": "This is a sample project that will be used to test building in  Travis CI, GitLab CI and Jenkins. aasasd asd",
+  "main": "app.js",
+  "dependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.3.0",
+    "express": "4.16.4",
+    "mocha": "6.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.liu.se:vicbe572/tddd41.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
