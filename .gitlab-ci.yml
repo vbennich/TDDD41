@@ -4,6 +4,11 @@ stages:
    - build
    - test
    - deploy
+
+cache:
+  key: npm_dependencies
+  paths:
+  - node_modules/
 #Lets define a job with for every stage.
 jobCleaning:
    stage: clean # This tag tells gitlab to run this job only for clean stage
@@ -16,7 +21,6 @@ jobBuilding:
 jobTesting:
    stage: test # This tag tells gitlab to run this job only for test stage
    script:
-      - npm install
       - npm test
 jobDeploying:
    stage: deploy # This tag tells gitlab to run this job only for deploy stage
