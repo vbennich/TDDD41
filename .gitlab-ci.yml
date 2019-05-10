@@ -12,10 +12,11 @@ jobCleaning:
 jobBuilding:
    stage: build # This tag tells gitlab to run this job only for build stage
    script:
-      - npm install
+      - echo "Building the app!"
 jobTesting:
    stage: test # This tag tells gitlab to run this job only for test stage
    script:
+      - npm install
       - npm test
 jobDeploying:
    stage: deploy # This tag tells gitlab to run this job only for deploy stage
