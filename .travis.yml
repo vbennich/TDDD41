@@ -1,10 +1,11 @@
+cache: npm
 jobs:
   include:
     - stage: clean
       script: echo "cleaning"
     - stage: build
-      script: echo "building"
+      script: npm install
     - stage: test
-      script: echo "testing"
+      script: npm test
     - stage: deploy
       script: echo "deploying"
