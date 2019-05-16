@@ -21,7 +21,8 @@ jobBuilding:
       - node_modules/
    artifacts:
      paths:
-       - .lab1-vicbe572-erian599.pdf
+       - lab1-vicbe572-erian599.pdf
+       - node_modules/
 jobTesting:
    stage: test # This tag tells gitlab to run this job only for test stage
    script:
