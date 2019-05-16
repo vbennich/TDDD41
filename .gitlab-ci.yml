@@ -8,12 +8,11 @@ stages:
    - build
    - test
    - deploy
-   - artifacts
 
 artifacts:
   paths:
-    - .lab1-vicbe572-erian599.pdf
-    
+  - .lab1-vicbe572-erian599.pdf
+
 #Lets define a job with for every stage.
 jobCleaning:
    stage: clean # This tag tells gitlab to run this job only for clean stage
