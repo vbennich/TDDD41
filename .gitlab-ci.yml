@@ -31,3 +31,8 @@ jobDeploying:
    stage: deploy # This tag tells gitlab to run this job only for deploy stage
    script:
       - echo "Deploying the code"
+
+usabilityTest:
+    stage: deploy
+    script:
+      - echo "Hej"
