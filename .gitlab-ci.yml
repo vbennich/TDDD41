@@ -5,7 +5,7 @@ stages:
    - build
    - test
    - deploy
-   - useability
+   - unusability
 
 
 #Lets define a job with for every stage.
@@ -32,3 +32,7 @@ jobDeploying:
    stage: deploy # This tag tells gitlab to run this job only for deploy stage
    script:
       - echo "Deploying the code"
+jobUnusable:
+   stage: unusability # This tag tells gitlab to run this job only for unusability stage
+   script:
+      - echo "Cleaning the code"
