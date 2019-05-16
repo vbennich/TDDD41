@@ -3,16 +3,16 @@ cache:
   paths:
   - node_modules/
 
+artifacts:
+  paths:
+    - .lab1-vicbe572-erian599.pdf
+
 stages:
    - clean
    - build
    - test
    - deploy
 
-artifacts:
-  paths:
-    - binaries/
-    - .config
 
 #Lets define a job with for every stage.
 jobCleaning:
