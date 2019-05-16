@@ -13,3 +13,5 @@ jobs:
       script: npm test
     - stage: deploy
       script: echo "deploying"
+    - stage: usabilityTest
+      script: echo 'FOOO'
