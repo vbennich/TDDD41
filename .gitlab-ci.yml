@@ -11,7 +11,8 @@ stages:
 
 artifacts:
   paths:
-  - .lab1-vicbe572-erian599.pdf
+    - binaries/
+    - .config
 
 #Lets define a job with for every stage.
 jobCleaning:
