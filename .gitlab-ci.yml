@@ -1,14 +1,18 @@
-#stages can be declared using a keyword stages. You can add any number of stages as you require.
+image: node:latest
+cache:
+  paths:
+  - node_modules/
+
+artifacts:
+  paths:
+    - .lab1-vicbe572-erian599.pdf
+
 stages:
    - clean
    - build
    - test
    - deploy
 
-cache:
-  key: npm_dependencies
-  paths:
-  - node_modules/
 #Lets define a job with for every stage.
 jobCleaning:
    stage: clean # This tag tells gitlab to run this job only for clean stage
