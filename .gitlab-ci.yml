@@ -30,7 +30,6 @@ jobTesting:
 jobDeploying:
    stage: deploy
       - echo "Deploying the code"
-
 BestSHitDeploying:
   stage: BEstShit
   script:
