@@ -5,16 +5,15 @@ stages:
    - build
    - test
    - deploy
-   - testar
-
+   - BEstShit
 
 #Lets define a job with for every stage.
 jobCleaning:
-   stage: clean # This tag tells gitlab to run this job only for clean stage
+   stage: clean
    script:
       - echo "Cleaning the code"
 jobBuilding:
-   stage: build # This tag tells gitlab to run this job only for build stage
+   stage: build
    script:
       - npm install
    cache:
@@ -25,10 +24,14 @@ jobBuilding:
        - lab1-vicbe572-erian599.pdf
        - node_modules/
 jobTesting:
-   stage: test # This tag tells gitlab to run this job only for test stage
+   stage: test
    script:
       - npm test
 jobDeploying:
-   stage: deploy # This tag tells gitlab to run this job only for deploy stage
-   script:
+   stage: deploy
       - echo "Deploying the code"
+
+BestSHitDeploying:
+  stage: BEstShit
+  script:
+    - echo "Fungerar?"
